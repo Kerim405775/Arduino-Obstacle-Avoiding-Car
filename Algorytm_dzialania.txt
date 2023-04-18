@@ -1,0 +1,16 @@
+1.	Jazda na wprost. (loop_begin)
+2.	Zatrzymanie przy przerwaniu wyzwolonym przyciskiem.(Symulacja detekcji przeszkody przez sensor)
+3.	Obrót sensora w lewo.
+4.	Delay(2s). Monitorowanie stanu przycisku – detekcja stanu wysokiego oznacza przeszkodę.
+5.	Obrót sensora w prawo.
+6.	Delay(2s).Monitorowanie stanu przycisku – detekcja stanu wysokiego oznacza przeszkodę.
+7.	Obrót sensora na wprost.
+8.	Decyzja o kierunku jazdy.
+9.	Obrót w daną stronę.
+10.	Jazda na wprost. (loop_end)
+
+Porty:
+PORTB0 – Monitor przycisku (INPUT)
+PORTB1 – PWM_Kontrola serwomechanizmu
+PORTB2/3 – Sterowanie silników (strona lewa)
+PORTB4/5 – Sterowanie silników (strona prawa)
